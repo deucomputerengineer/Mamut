@@ -1,0 +1,6 @@
+framework module Pods_Mamut {
+  umbrella header "Pods-Mamut-umbrella.h"
+
+  export *
+  module * { export * }
+}
