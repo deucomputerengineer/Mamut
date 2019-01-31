@@ -17,6 +17,31 @@ class ViewController: UIViewController {
         
         print("hello girls!!!")
         print("Mine deneme")
+        
+        
+        let task = URLSession.shared.dataTask(with: url)  { (data,response,error) in
+            
+            print(String(data: data!, encoding: .utf8)!)
+            
+            do
+            {
+                let stories = try JSONDecoder().decode(DataModel.self, from: data!)
+                print(stories)
+                
+            }
+            catch let error{
+                print("Json Parse Error : \(error)")
+            }
+            
+            
+            if error != nil {
+                
+            }
+            
+        }
+        
+        task.resume()
+        
     }
 
 
