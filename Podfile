@@ -7,5 +7,6 @@ target 'Mamut' do
 
   # Pods for Mamut
     pod 'Alamofire'
+    pod 'Firebase'
 
 end
