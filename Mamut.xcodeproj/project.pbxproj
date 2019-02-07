@@ -16,6 +16,7 @@
 		C129DEF022034BAE004C2D45 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEEF22034BAE004C2D45 /* BaseViewController.swift */; };
 		C129DEF222034BBD004C2D45 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF122034BBD004C2D45 /* ViewViewController.swift */; };
 		C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF322034BCB004C2D45 /* ModelViewController.swift */; };
+		C1D4FBB8220C72EB00046E5D /* MovieInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */; };
 		FC54E46BED38B1483C1D5191 /* Pods_Mamut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB912732A6A41086CE1635 /* Pods_Mamut.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		C129DEEF22034BAE004C2D45 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C129DEF122034BBD004C2D45 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		C129DEF322034BCB004C2D45 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoModel.swift; sourceTree = "<group>"; };
 		E7F31E56ED6B612E28CB642B /* Pods-Mamut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mamut.release.xcconfig"; path = "Target Support Files/Pods-Mamut/Pods-Mamut.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C129DEF322034BCB004C2D45 /* ModelViewController.swift */,
+				C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D4FBB8220C72EB00046E5D /* MovieInfoModel.swift in Sources */,
 				C129DEEE22034B7E004C2D45 /* NetworkLayer.swift in Sources */,
 				C129DEF022034BAE004C2D45 /* BaseViewController.swift in Sources */,
 				C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */,

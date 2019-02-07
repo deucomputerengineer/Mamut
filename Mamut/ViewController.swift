@@ -18,14 +18,16 @@ class ViewController: UIViewController {
         print("hello girls!!!")
         print("Mine deneme")
         
+        let url = URL(string: "https://www.omdbapi.com/?apikey=9b10485a&t=X-men")
+        let urlRequest = URLRequest(url: url!)
         
-        let task = URLSession.shared.dataTask(with: url)  { (data,response,error) in
+        let task = URLSession.shared.dataTask(with: urlRequest)  { (data,response,error) in
             
             print(String(data: data!, encoding: .utf8)!)
             
             do
             {
-                let stories = try JSONDecoder().decode(DataModel.self, from: data!)
+                let stories = try JSONDecoder().decode(MovieInfoModel.self, from: data!)
                 print(stories)
                 
             }
