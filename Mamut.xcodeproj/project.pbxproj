@@ -17,6 +17,8 @@
 		C129DEF222034BBD004C2D45 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF122034BBD004C2D45 /* ViewViewController.swift */; };
 		C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF322034BCB004C2D45 /* ModelViewController.swift */; };
 		C1D4FBB8220C72EB00046E5D /* MovieInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */; };
+		C1D4FBBB220C78C000046E5D /* MovieInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4FBB9220C78C000046E5D /* MovieInfoCell.swift */; };
+		C1D4FBBC220C78C000046E5D /* MovieInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D4FBBA220C78C000046E5D /* MovieInfoCell.xib */; };
 		FC54E46BED38B1483C1D5191 /* Pods_Mamut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB912732A6A41086CE1635 /* Pods_Mamut.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		C129DEF122034BBD004C2D45 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		C129DEF322034BCB004C2D45 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
 		C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoModel.swift; sourceTree = "<group>"; };
+		C1D4FBB9220C78C000046E5D /* MovieInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoCell.swift; sourceTree = "<group>"; };
+		C1D4FBBA220C78C000046E5D /* MovieInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoCell.xib; sourceTree = "<group>"; };
 		E7F31E56ED6B612E28CB642B /* Pods-Mamut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mamut.release.xcconfig"; path = "Target Support Files/Pods-Mamut/Pods-Mamut.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,8 @@
 			children = (
 				C129DEF322034BCB004C2D45 /* ModelViewController.swift */,
 				C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */,
+				C1D4FBB9220C78C000046E5D /* MovieInfoCell.swift */,
+				C1D4FBBA220C78C000046E5D /* MovieInfoCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			files = (
 				C11CBB9521F8BC8600BFB01C /* LaunchScreen.storyboard in Resources */,
 				C11CBB9221F8BC8600BFB01C /* Assets.xcassets in Resources */,
+				C1D4FBBC220C78C000046E5D /* MovieInfoCell.xib in Resources */,
 				C11CBB9021F8BC8500BFB01C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +266,7 @@
 				C129DEEE22034B7E004C2D45 /* NetworkLayer.swift in Sources */,
 				C129DEF022034BAE004C2D45 /* BaseViewController.swift in Sources */,
 				C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */,
+				C1D4FBBB220C78C000046E5D /* MovieInfoCell.swift in Sources */,
 				C129DEF222034BBD004C2D45 /* ViewViewController.swift in Sources */,
 				C11CBB8D21F8BC8500BFB01C /* ViewController.swift in Sources */,
 				C11CBB8B21F8BC8500BFB01C /* AppDelegate.swift in Sources */,

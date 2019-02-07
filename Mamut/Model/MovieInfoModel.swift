@@ -8,83 +8,99 @@
 
 import Foundation
 
-class MovieInfoModel: Codable {
-    let title, year, rated, released: String?
-    let runtime, genre, director, writer: String?
-    let actors, plot, language, country: String?
-    let awards: String?
-    let poster: String?
-    let ratings: [Rating]?
-    let metascore, imdbRating, imdbVotes, imdbID: String?
-    let type, dvd, boxOffice, production: String?
-    let website: String?
-    let response: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case title = "Title"
-        case year = "Year"
-        case rated = "Rated"
-        case released = "Released"
-        case runtime = "Runtime"
-        case genre = "Genre"
-        case director = "Director"
-        case writer = "Writer"
-        case actors = "Actors"
-        case plot = "Plot"
-        case language = "Language"
-        case country = "Country"
-        case awards = "Awards"
-        case poster = "Poster"
-        case ratings = "Ratings"
-        case metascore = "Metascore"
-        case imdbRating, imdbVotes, imdbID
-        case type = "Type"
-        case dvd = "DVD"
-        case boxOffice = "BoxOffice"
-        case production = "Production"
-        case website = "Website"
-        case response = "Response"
-    }
-    
-    init(title: String?, year: String?, rated: String?, released: String?, runtime: String?, genre: String?, director: String?, writer: String?, actors: String?, plot: String?, language: String?, country: String?, awards: String?, poster: String?, ratings: [Rating]?, metascore: String?, imdbRating: String?, imdbVotes: String?, imdbID: String?, type: String?, dvd: String?, boxOffice: String?, production: String?, website: String?, response: String?) {
-        self.title = title
-        self.year = year
-        self.rated = rated
-        self.released = released
-        self.runtime = runtime
-        self.genre = genre
-        self.director = director
-        self.writer = writer
-        self.actors = actors
-        self.plot = plot
-        self.language = language
-        self.country = country
-        self.awards = awards
-        self.poster = poster
-        self.ratings = ratings
-        self.metascore = metascore
-        self.imdbRating = imdbRating
-        self.imdbVotes = imdbVotes
-        self.imdbID = imdbID
-        self.type = type
-        self.dvd = dvd
-        self.boxOffice = boxOffice
-        self.production = production
-        self.website = website
-        self.response = response
-    }
-}
 
-class Rating: Codable {
-    let source, value: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case source = "Source"
-        case value = "Value"
+    class MovieInfoModel: Codable {
+        let feed: Feed?
+        
+        init(feed: Feed?) {
+            self.feed = feed
+        }
     }
     
-    init(source: String?, value: String?) {
-        self.source = source
-        self.value = value
+    class Feed: Codable {
+        let title: String?
+        let id: String?
+        let author: Author?
+        let links: [Link]?
+        let copyright, country: String?
+        let icon: String?
+        let updated: String?
+        let results: [Result]?
+        
+        init(title: String?, id: String?, author: Author?, links: [Link]?, copyright: String?, country: String?, icon: String?, updated: String?, results: [Result]?) {
+            self.title = title
+            self.id = id
+            self.author = author
+            self.links = links
+            self.copyright = copyright
+            self.country = country
+            self.icon = icon
+            self.updated = updated
+            self.results = results
+        }
     }
-}
+    
+    class Author: Codable {
+        let name: String?
+        let uri: String?
+        
+        init(name: String?, uri: String?) {
+            self.name = name
+            self.uri = uri
+        }
+    }
+    
+    class Link: Codable {
+        let linkSelf: String?
+        let alternate: String?
+        
+        enum CodingKeys: String, CodingKey {
+            case linkSelf = "self"
+            case alternate
+        }
+        
+        init(linkSelf: String?, alternate: String?) {
+            self.linkSelf = linkSelf
+            self.alternate = alternate
+        }
+    }
+    
+    class Result: Codable {
+        let artistName, id, releaseDate, name: String?
+        let kind: String?
+        let copyright: String?
+        let artworkUrl100: String?
+        let genres: [Genre]?
+        let url: String?
+        let contentAdvisoryRating: String?
+        
+        init(artistName: String?, id: String?, releaseDate: String?, name: String?, kind: String?, copyright: String?, artworkUrl100: String?, genres: [Genre]?, url: String?, contentAdvisoryRating: String?) {
+            self.artistName = artistName
+            self.id = id
+            self.releaseDate = releaseDate
+            self.name = name
+            self.kind = kind
+            self.copyright = copyright
+            self.artworkUrl100 = artworkUrl100
+            self.genres = genres
+            self.url = url
+            self.contentAdvisoryRating = contentAdvisoryRating
+        }
+    }
+    
+    class Genre: Codable {
+        let genreID, name: String?
+        let url: String?
+        
+        enum CodingKeys: String, CodingKey {
+            case genreID = "genreId"
+            case name, url
+        }
+        
+        init(genreID: String?, name: String?, url: String?) {
+            self.genreID = genreID
+            self.name = name
+            self.url = url
+        }
+    }
+
