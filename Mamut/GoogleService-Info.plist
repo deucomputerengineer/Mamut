@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>945585793365-r87q5igbq6p384kdguhv60kcpc0k5dun.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.945585793365-r87q5igbq6p384kdguhv60kcpc0k5dun</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAyXQl9YeoVYLN4q23ywDHdQN7cIq1O0KM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>945585793365</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mamutproject.Mamut</string>
+	<key>PROJECT_ID</key>
+	<string>mamut-1dc8b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mamut-1dc8b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:945585793365:ios:c25e38cc62a4469b</string>
+	<key>DATABASE_URL</key>
+	<string>https://mamut-1dc8b.firebaseio.com</string>
+</dict>
+</plist>

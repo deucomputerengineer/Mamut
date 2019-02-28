@@ -8,5 +8,11 @@ target 'Mamut' do
   # Pods for Mamut
     pod 'Alamofire'
     pod 'Firebase'
+    pod 'Firebase/Auth'
+    pod 'FBSDKLoginKit'
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+
+
 
 end

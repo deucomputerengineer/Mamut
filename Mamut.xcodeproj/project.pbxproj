@@ -16,6 +16,8 @@
 		C129DEF022034BAE004C2D45 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEEF22034BAE004C2D45 /* BaseViewController.swift */; };
 		C129DEF222034BBD004C2D45 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF122034BBD004C2D45 /* ViewViewController.swift */; };
 		C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DEF322034BCB004C2D45 /* ModelViewController.swift */; };
+		C1A28FDF221C671E00CA41F0 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A28FDE221C671E00CA41F0 /* CreateUserViewController.swift */; };
+		C1D260BA222834F000B376D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1D260B9222834F000B376D8 /* GoogleService-Info.plist */; };
 		C1D4FBB8220C72EB00046E5D /* MovieInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */; };
 		C1D4FBBB220C78C000046E5D /* MovieInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4FBB9220C78C000046E5D /* MovieInfoCell.swift */; };
 		C1D4FBBC220C78C000046E5D /* MovieInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D4FBBA220C78C000046E5D /* MovieInfoCell.xib */; };
@@ -36,6 +38,8 @@
 		C129DEEF22034BAE004C2D45 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C129DEF122034BBD004C2D45 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
 		C129DEF322034BCB004C2D45 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		C1A28FDE221C671E00CA41F0 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		C1D260B9222834F000B376D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1D4FBB7220C72EB00046E5D /* MovieInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoModel.swift; sourceTree = "<group>"; };
 		C1D4FBB9220C78C000046E5D /* MovieInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoCell.swift; sourceTree = "<group>"; };
 		C1D4FBBA220C78C000046E5D /* MovieInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieInfoCell.xib; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				C11CBB8E21F8BC8500BFB01C /* Main.storyboard */,
 				C11CBB9121F8BC8600BFB01C /* Assets.xcassets */,
 				C11CBB9321F8BC8600BFB01C /* LaunchScreen.storyboard */,
+				C1D260B9222834F000B376D8 /* GoogleService-Info.plist */,
 				C11CBB9621F8BC8600BFB01C /* Info.plist */,
 			);
 			path = Mamut;
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C129DEF122034BBD004C2D45 /* ViewViewController.swift */,
+				C1A28FDE221C671E00CA41F0 /* CreateUserViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			files = (
 				C11CBB9521F8BC8600BFB01C /* LaunchScreen.storyboard in Resources */,
 				C11CBB9221F8BC8600BFB01C /* Assets.xcassets in Resources */,
+				C1D260BA222834F000B376D8 /* GoogleService-Info.plist in Resources */,
 				C1D4FBBC220C78C000046E5D /* MovieInfoCell.xib in Resources */,
 				C11CBB9021F8BC8500BFB01C /* Main.storyboard in Resources */,
 			);
@@ -243,6 +250,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Mamut/Pods-Mamut-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -251,6 +264,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -271,6 +290,7 @@
 				C129DEF022034BAE004C2D45 /* BaseViewController.swift in Sources */,
 				C129DEF422034BCB004C2D45 /* ModelViewController.swift in Sources */,
 				C1D4FBBB220C78C000046E5D /* MovieInfoCell.swift in Sources */,
+				C1A28FDF221C671E00CA41F0 /* CreateUserViewController.swift in Sources */,
 				C129DEF222034BBD004C2D45 /* ViewViewController.swift in Sources */,
 				C11CBB8D21F8BC8500BFB01C /* ViewController.swift in Sources */,
 				C11CBB8B21F8BC8500BFB01C /* AppDelegate.swift in Sources */,
